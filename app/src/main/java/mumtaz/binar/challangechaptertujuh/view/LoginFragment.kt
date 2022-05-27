@@ -13,6 +13,7 @@ import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_login.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -26,6 +27,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 
+@AndroidEntryPoint
 class LoginFragment : Fragment() {
 
     lateinit var dataUser : List<GetAllUserItem>

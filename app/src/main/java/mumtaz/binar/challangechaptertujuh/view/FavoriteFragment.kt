@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.asLiveData
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_favorite.*
 import kotlinx.android.synthetic.main.fragment_favorite.view.*
 import kotlinx.coroutines.GlobalScope
@@ -19,6 +20,7 @@ import mumtaz.binar.challangechapterenam.roomdb.FavoriteFilm
 import mumtaz.binar.challangechaptertujuh.R
 
 
+@AndroidEntryPoint
 class FavoriteFragment : Fragment() {
 
     lateinit var userManager: UserManager

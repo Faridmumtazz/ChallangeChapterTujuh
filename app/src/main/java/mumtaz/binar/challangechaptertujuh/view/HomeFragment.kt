@@ -25,8 +25,7 @@ import mumtaz.binar.challangechaptertujuh.R
 
 
 
-@Module
-@InstallIn(FragmentComponent::class)
+@AndroidEntryPoint
 class HomeFragment : Fragment() {
 
     lateinit var adapterfilm: AdapterFilm
@@ -66,12 +65,7 @@ class HomeFragment : Fragment() {
     }
 
     fun getFilm(){
-        val filmadapter = AdapterFilm(){
-            val bund = Bundle()
-            bund.putParcelable("detailfilm", it)
-            Navigation.findNavController(view!!).navigate(R.id.action_homeFragment_to_detailFragment,bund)
 
-        }
         val viewModel = ViewModelProvider(requireActivity()).get(ViewModelFilm::class.java)
         viewModel.film.observe(requireActivity()) {
             if(it != null){

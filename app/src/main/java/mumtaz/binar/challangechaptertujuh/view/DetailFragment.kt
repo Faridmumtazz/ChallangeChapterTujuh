@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_detail.*
 import kotlinx.android.synthetic.main.fragment_detail.view.*
 import kotlinx.coroutines.GlobalScope
@@ -16,6 +17,7 @@ import mumtaz.binar.challangechapterenam.roomdb.FavoriteDatabase
 import mumtaz.binar.challangechapterenam.roomdb.FavoriteFilm
 import mumtaz.binar.challangechaptertujuh.R
 
+@AndroidEntryPoint
 class DetailFragment : Fragment() {
     lateinit var favorite : String
     var database : FavoriteDatabase? = null

@@ -14,6 +14,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.asLiveData
 import androidx.navigation.findNavController
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_profile.*
 import kotlinx.android.synthetic.main.fragment_profile.view.*
 import kotlinx.android.synthetic.main.logout_dialog.view.*
@@ -24,6 +25,7 @@ import mumtaz.binar.challangechapterenam.viewmodel.ViewModelUser
 import mumtaz.binar.challangechaptertujuh.R
 
 
+@AndroidEntryPoint
 class ProfileFragment : Fragment() {
 
     lateinit var viewModel: ViewModelUser
